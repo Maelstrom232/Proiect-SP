@@ -1,0 +1,20 @@
+T = 2;
+t1 = -1:0.002:-0.75
+t2 = -0.75:0.002:-0.5
+t3 = -0.5:0.002:-0.25
+t4 = -0.25:0.002:0;
+t5 = 0:0.002:0.25;
+t6 = 0.25:0.002:0.5;
+t7 = 0.5:0.002:0.75;
+t8 = 0.75:0.002:1;
+x1 = zeros(size(t1))-7;
+x2 = zeros(size(t2))-5;
+x3 = zeros(size(t3))-3;
+x4 = zeros(size(t4))-1;
+x5 = ones(size(t5));
+x6 = ones(size(t6))+2;
+x7 = ones(size(t7))+4;
+x8 = ones(size(t8))+6;
+t = [t1 t2 t3 t4 t5 t6 t7 t8];
+x = [x1 x2 x3 x4 x5 x6 x7 x8];
+plot(t,x),ylim([-9.5 9.0]),xlabel('Timp [s]'),ylabel('Amplitudinea'),grid on;
